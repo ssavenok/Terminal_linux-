@@ -1,0 +1,8 @@
+it 
+is
+new
+file
+in 
+a
+new
+folder
