@@ -44,7 +44,7 @@ the sec 2
 Pres "Ctrl+c"
 
  11. Через cat добавить в текстовый файл tf_2.txt строку “the sec 3”
-cat >> tf_2.txt
+cat >> ~/Git/Terminal_Linux-/dir_1/tf_2.txt
 Enter:
 the sec 3
 Pres "Ctrl+c"
@@ -56,7 +56,7 @@ the SeCoNd 2
 Pres "Ctrl+c"
 
  13. Через cat добавить в текстовый файл tf_2.txt строку “the seConD 2”
-cat >> tf_2.txt
+cat >> ~/Git/Terminal_Linux-/dir_1/tf_2.txt
 Enter:
 the seConD 2
 Pres "Ctrl+c"
@@ -71,7 +71,7 @@ cat > tf_5.txt
 Enter: 13 times press "Enter"
 Pres "Ctrl+c"
 
- 16. Вывести список всех файлов в папке.	            ls -la
+ 16. Вывести список всех файлов в папке.	            ls 
 
  17. Выйти из папки inner_dir_1                       cd ..
 
@@ -109,10 +109,10 @@ grep second *
 grep -i second *
 
  29. Найти строки в файлах где есть комбинация букв “second” во всех папках ниже уровнем
-grep -r second
+grep second */*
 
  30. Найти только путь и название файла в строках которых есть комбинация букв “second” в текущей папке
-grep -lr second
+grep -l second inner_dir_1/*
 
  31. Найти все строки во всех файлах где нет комбинации “second”
 grep -v second *.*
