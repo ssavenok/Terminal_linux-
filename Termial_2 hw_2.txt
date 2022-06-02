@@ -43,10 +43,14 @@ Enter:
 the sec 2
 Pres "Ctrl+c"
 
+<<<<<<< HEAD
  11. Через cat добавить в текстовый файл tf_2.txt строку “the sec 3”    #Привет. 11,13 нет файла в папке  т.е в другой папке dir_1 !!!!
 cat >> tf_2.txt									cat >> tf_2.txt    - через "cat >> file.*" я могу создать file и добавить данные в него
 										cat >> ~/Git/Terminal_Linux-/dir_1/tf_2.txt    - !!I can!!
 11.
+=======
+ 11. Через cat добавить в текстовый файл tf_2.txt строку “the sec 3”
+>>>>>>> fdbe4d9432bec7e86c5b5756446b3fa34392df9d
 cat >> ~/Git/Terminal_Linux-/dir_1/tf_2.txt
 Enter:
 the sec 3
@@ -58,8 +62,13 @@ Enter:
 the SeCoNd 2
 Pres "Ctrl+c"
 
+<<<<<<< HEAD
  13. Через cat добавить в текстовый файл tf_2.txt строку “the seConD 2”		#Привет. 11,13 нет файла в папке
 cat >> tf_2.txt									cat >> ~/Git/Terminal_Linux-/dir_1/tf_2.txt
+=======
+ 13. Через cat добавить в текстовый файл tf_2.txt строку “the seConD 2”
+cat >> ~/Git/Terminal_Linux-/dir_1/tf_2.txt
+>>>>>>> fdbe4d9432bec7e86c5b5756446b3fa34392df9d
 Enter:
 the seConD 2
 Pres "Ctrl+c"
@@ -83,7 +92,11 @@ cat > tf_5.txt
 Enter: 13 times press "Enter"
 Pres "Ctrl+c"
 
+<<<<<<< HEAD
  16. Вывести список всех файлов в папке.	           ls -la		# 16  только файлы   (ls *.*)верно?
+=======
+ 16. Вывести список всех файлов в папке.	            ls 
+>>>>>>> fdbe4d9432bec7e86c5b5756446b3fa34392df9d
 
  17. Выйти из папки inner_dir_1                       cd ..
 
@@ -120,11 +133,19 @@ grep second *
  28. Найти строки в файлах где есть комбинация букв “second” в любом регистре в текущей папке
 grep -i second *
 
+<<<<<<< HEAD
  29. Найти строки в файлах где есть комбинация букв “second” во всех папках ниже уровнем 	#29 в папке ниже уровнем -  grep second */*  -верно?
  grep -r second
 
  30. Найти только путь и название файла в строках которых есть комбинация букв “second” в текущей папке 	#30в текущей папке-    grep -l second inner_dir_1/* 
 grep -lr second														Зачем тебе - r?
+=======
+ 29. Найти строки в файлах где есть комбинация букв “second” во всех папках ниже уровнем
+grep second */*
+
+ 30. Найти только путь и название файла в строках которых есть комбинация букв “second” в текущей папке
+grep -l second inner_dir_1/*
+>>>>>>> fdbe4d9432bec7e86c5b5756446b3fa34392df9d
 
  31. Найти все строки во всех файлах где нет комбинации “second”
 grep -v second *.*
